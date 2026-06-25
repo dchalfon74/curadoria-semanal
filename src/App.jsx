@@ -98,16 +98,34 @@ ${itemsFormatted}
 
 INSTRUÇÕES:
 - Tom: ${TONE_DESC[tone]}
-- Comece com um header: "📬 *Digest Semanal — ${week || 'esta semana'}*"
-- Escreva uma abertura curta (2–3 linhas) com o "tema da semana" que emerge dos itens
-- Organize os itens em seções temáticas (ex: 🤖 IA & Tech, 💊 Healthtech, 💰 VC & Mercado, 📌 Outros)
-- Para cada item: título em *negrito*, fonte entre parênteses, 2–4 linhas de síntese comentada com perspectiva de investidor
-- Inclua "💡 Por que importa" quando o item tiver relevância estratégica clara
-- Feche com 3–5 bullets de "🎯 Sinais da semana" — as principais conclusões que um board member deveria levar
-- Use emojis com moderação, apenas no início de seções
-- Formato limpo para WhatsApp: *negrito* com asteriscos, sem markdown avançado
-- Máximo 600 palavras
-- Escreva em português brasileiro`
+- Siga EXATAMENTE o formato abaixo, sem desvios
+- Para cada item, use o link ou título original como está
+- O campo "Por que é relevante:" deve ter 2–4 linhas diretas, com perspectiva de investidor em VC/healthtech/tech
+- Não use emojis, bullets, seções temáticas nem headers extras
+- Escreva em português brasileiro
+- Não invente links — use os títulos/links exatamente como fornecidos
+
+FORMATO DE SAÍDA (use exatamente esta estrutura):
+
+Aqui vão referencias bacanas que descobri nessa ultima semana.
+
+___
+
+[título ou link do item 1]
+
+Por que é relevante:
+[2–4 linhas de comentário]
+___
+
+[título ou link do item 2]
+
+Por que é relevante:
+[2–4 linhas de comentário]
+___
+
+[continuar para todos os itens...]
+
+Boa semana a todos!`
 
     try {
       const resp = await fetch('https://api.anthropic.com/v1/messages', {
