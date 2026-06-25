@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ocean: #225379;
+  --marine: #3981A4;
+  --turquoise: #56BBC2;
+  --aqua: #B7E7DC;
+  --coral: #E05145;
+  --bg: #ffffff;
+  --surface: #F4F8FB;
+  --border-color: #dde8ef;
+  --text: #225379;
+  --text-muted: #6b8fa6;
+  --radius: 12px;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #f0f4f7;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+}
